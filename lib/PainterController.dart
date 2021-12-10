@@ -252,6 +252,10 @@ class PainterController extends ChangeNotifier {
     Paint paint = new Paint();
     paint.strokeCap = StrokeCap.round;
     paint.strokeJoin = StrokeJoin.round;
+
+    // Code to brush softness
+    paint.maskFilter = MaskFilter.blur(BlurStyle.normal, 20);
+
     if (_eraseMode) {
       paint.blendMode = BlendMode.clear;
       paint.color = Color.fromARGB(0, 255, 0, 0);
