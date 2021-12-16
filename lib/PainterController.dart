@@ -254,7 +254,7 @@ class PainterController extends ChangeNotifier {
     paint.strokeJoin = StrokeJoin.round;
 
     // Code to brush softness
-    paint.maskFilter = MaskFilter.blur(BlurStyle.normal, 20);
+    // paint.maskFilter = MaskFilter.blur(BlurStyle.normal, 20);
 
     if (_eraseMode) {
       paint.blendMode = BlendMode.clear;
